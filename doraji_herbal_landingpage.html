@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>DORAJI HERBAL</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+    font-family:'Noto Sans KR',sans-serif;
+    background:#f9f6f1;
+    color:#333;
+    line-height:1.6;
+}
+section{padding:80px 8%}
+.hero{
+    height:100vh;
+    background:linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.4)),
+    url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwMCIgaGVpZ2h0PSI5MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjE2MDAiIGhlaWdodD0iOTAwIiBmaWxsPSIjZWRlM2Q0Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtc2l6ZT0iNjAiIGZpbGw9IiM5OTg1NmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkRPUkFKSSBIRVJCQUwgSEVSTzwvdGV4dD48L3N2Zz4=');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+}
+.hero-content{
+    max-width:650px;
+}
+.hero h1{
+    font-size:72px;
+    letter-spacing:6px;
+    color:#4d4337;
+    margin-bottom:20px;
+}
+.hero p{
+    font-size:24px;
+    margin-bottom:30px;
+}
+.btn{
+    display:inline-block;
+    padding:14px 34px;
+    background:#b69a74;
+    color:white;
+    text-decoration:none;
+    border-radius:40px;
+    margin-right:12px;
+}
+.section-title{
+    font-size:42px;
+    text-align:center;
+    margin-bottom:50px;
+    color:#5d4d3d;
+}
+.brand-story{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+.brand-story img{
+    width:100%;
+    border-radius:24px;
+}
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:30px;
+}
+.card{
+    background:white;
+    border-radius:24px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.3s;
+}
+.card:hover{
+    transform:translateY(-10px);
+}
+.card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+.card-content{
+    padding:24px;
+}
+.card h3{
+    margin-bottom:10px;
+    color:#5d4d3d;
+}
+.benefits{
+    background:#efe6d9;
+}
+.benefit-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+.benefit-item{
+    background:white;
+    padding:40px 20px;
+    border-radius:20px;
+    text-align:center;
+}
+.review{
+    background:white;
+    border-radius:24px;
+    padding:30px;
+    margin-bottom:20px;
+}
+.footer{
+    background:#4d4337;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+.cta{
+    background:#d9c6a8;
+    text-align:center;
+}
+.cta h2{
+    font-size:42px;
+    margin-bottom:20px;
+}
+.cta p{
+    margin-bottom:30px;
+}
+@media(max-width:900px){
+    .hero h1{font-size:46px}
+    .brand-story{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>DORAJI HERBAL</h1>
+        <p>피부에 스며드는 도라지의 깊은 숨결</p>
+        <a href="#products" class="btn">제품 보기</a>
+        <a href="#story" class="btn">브랜드 스토리</a>
+    </div>
+</section>
+
+<section id="story">
+    <h2 class="section-title">브랜드 스토리</h2>
+    <div class="brand-story">
+        <div>
+            <h3 style="font-size:34px;margin-bottom:20px;">현대적인 한방의 아름다움</h3>
+            <p>
+                DORAJI HERBAL은 도라지의 깊은 에너지와 현대 피부과학을 결합한
+                프리미엄 한방 코스메틱 브랜드입니다.
+                자연 유래 성분과 감각적인 럭셔리 디자인으로
+                중년 피부에 필요한 탄력과 광채를 선사합니다.
+            </p>
+        </div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjUwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iI2U5ZGZjZiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LXNpemU9IjQwIiBmaWxsPSIjNzU2ODU0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5CUkFORCBTVE9SWTwvdGV4dD48L3N2Zz4=" />
+    </div>
+</section>
+
+<section id="products">
+    <h2 class="section-title">PRODUCT LINE</h2>
+
+    <div class="products">
+
+        <div class="card">
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgZmlsbD0iI2YxZTdkNiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LXNpemU9IjI4IiBmaWxsPSIjNzU2ODU0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5BTVBPVUxFPC90ZXh0Pjwvc3ZnPg==" />
+            <div class="card-content">
+                <h3>도라지 진액 탄력 앰플</h3>
+                <p>깊은 보습과 피부 탄력을 동시에 케어하는 프리미엄 앰플</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgZmlsbD0iI2VmZTdmMSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LXNpemU9IjI4IiBmaWxsPSIjNzU2ODU0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5UT05FUjwvdGV4dD48L3N2Zz4=" />
+            <div class="card-content">
+                <h3>도라지 수분 진정 토너</h3>
+                <p>민감해진 피부를 편안하게 진정시키는 수분 토너</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgZmlsbD0iI2YzZThkYiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LXNpemU9IjI4IiBmaWxsPSIjNzU2ODU0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5DUkVBTTwvdGV4dD48L3N2Zz4=" />
+            <div class="card-content">
+                <h3>도라지 한방 크림</h3>
+                <p>쫀쫀한 영양감으로 피부 장벽을 보호하는 탄력 크림</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgZmlsbD0iI2UwZTZmMiIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LXNpemU9IjI4IiBmaWxsPSIjNzU2ODU0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5NSVNUPC90ZXh0Pjwvc3ZnPg==" />
+            <div class="card-content">
+                <h3>도라지 광채 미스트</h3>
+                <p>즉각적인 수분 충전과 은은한 광채 표현</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgZmlsbD0iI2U5ZTJlMCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LXNpemU9IjI4IiBmaWxsPSIjNzU2ODU0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5DTEVBTlNJTkcgQkFMTTwvdGV4dD48L3N2Zz4=" />
+            <div class="card-content">
+                <h3>도라지 클렌징 밤</h3>
+                <p>메이크업과 노폐물을 부드럽게 제거하는 클렌징</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="benefits">
+    <h2 class="section-title">피부 고민 솔루션</h2>
+
+    <div class="benefit-grid">
+        <div class="benefit-item">
+            <h3>탄력 개선</h3>
+            <p>늘어진 피부에 탄탄한 에너지</p>
+        </div>
+
+        <div class="benefit-item">
+            <h3>깊은 보습</h3>
+            <p>건조한 피부에 촉촉한 수분감</p>
+        </div>
+
+        <div class="benefit-item">
+            <h3>광채 피부</h3>
+            <p>맑고 자연스러운 윤기 표현</p>
+        </div>
+
+        <div class="benefit-item">
+            <h3>민감 진정</h3>
+            <p>예민한 피부를 편안하게 케어</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">REAL REVIEW</h2>
+
+    <div class="review">
+        “피부가 편안해지고 윤기가 살아났어요.” — 52세 김OO
+    </div>
+
+    <div class="review">
+        “한방향이 은은해서 정말 고급스럽습니다.” — 47세 박OO
+    </div>
+
+    <div class="review">
+        “백화점 브랜드 같은 분위기가 마음에 들어요.” — 58세 이OO
+    </div>
+</section>
+
+<section class="cta">
+    <h2>오늘의 피부가 내일의 나이를 결정합니다</h2>
+    <p>지금 DORAJI HERBAL의 프리미엄 한방 케어를 경험하세요.</p>
+    <a href="#" class="btn">지금 구매하기</a>
+</section>
+
+<footer class="footer">
+    <h3>DORAJI HERBAL</h3>
+    <p>Modern Korean Herbal Skincare</p>
+</footer>
+
+</body>
+</html>
